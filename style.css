@@ -1,0 +1,54 @@
+:root {
+    --primary-color: #111;
+    --secondary-color: #1d1d1d;
+    --tertiary-color: #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.light {
+    --primary-color: #fff;
+    --secondary-color: #8f939b;
+    --tertiary-color: #000;
+}
+
+body {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 400px;
+}
+
+.square {
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 2px var(--tertiary-color);
+    margin: 2px;
+    width: 16px;
+    height: 16px;
+    transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+}
+
+.square:hover {
+    transition-duration: 0s;
+}
+
+#toggleMode {
+    margin: 2rem 0 2rem 4rem;
+    padding: 1rem 2rem;
+}
